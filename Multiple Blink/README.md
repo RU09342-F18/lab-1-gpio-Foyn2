@@ -3,7 +3,3 @@ Multiple Blink was implemented a different way. Since we are using multiple LEDs
 register points to. For the G2553, we set Bits 0 and 6 to be output pins, or 1.0 and 1.6, respectively.From there, an infinite for loop was created with volatile unsigned integers, meaning that they could change at anytime but would not be able to be negative. With non-negative ints, the speed of the LED blinks is more easily controlled. 
 
 For the MSP430G2553, the  "a" and "b" integers were both set at toggle delays. a was set to toggle once it was greater than 3000, and b was set to toggle once it was greater than 30000. Once toggled, the two output pins, 1.0 and 1.6, were XORed with Bit0 to turn the LEDs on and off. Once done on the board, it was seen that LED 1.0 toggled every 10 times that LED 1.6 toggled, which matches up with the 3000 and 30000 number difference seen in the resepective if statements. The MSP432P401R outputs were switched to 1.0 and 2.0 due to the difference in board configuration. (2.0 was set through P2DIR instead of P1DIR). 
-
-
-
-Now that we have blinked at least 1 LED, what about blinking multiple LEDS at the same time? The minimum that you need to develop is blinking at least two LEDs at two different rates. Although I am not going to give you a speed, you should probably pick a rate which is visible to a standard human. I really hope that you take this further and perform some of the extra work for this part of the lab exercise.
