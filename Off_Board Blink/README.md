@@ -3,5 +3,6 @@ The off board blink portion of the lab involved demonstrating the functionality 
 
 The Multiple Blink code was used for this Off-board Blink demonstration. Because another Led was used, another variable was created and incremented in the for loop.
 
-Gif Link: 
+Giphy Links: https://gph.is/2xF1mY0
+             https://media.giphy.com/media/64CyAs9eSvpo2pDVUS/giphy.gif
 
