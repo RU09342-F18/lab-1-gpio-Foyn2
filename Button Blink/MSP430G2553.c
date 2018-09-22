@@ -17,7 +17,7 @@ int main(void)
 	{
 
 	    if((P1IN & BIT3) != BIT3){ //Defines the condition of when the Led is on or off (if button is pressed or not pressed)
-	    P1OUT ^= BIT0; //Tells led to turn on and off (0 or 1) via Exclusive OR
+	    P1OUT ^= BIT0; //Tells led to turn on and off (XOR) based on the preexisting condition of the button being pressed or not pressed.
 
 	    _delay_cycles(500000);//Sets toggle delay of 0.5 seconds. If button held, it starts to blink
 	    }
